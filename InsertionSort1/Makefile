@@ -18,7 +18,7 @@ OBJFILES=InsertionSort1.o
 	$(CC) -c $(CFLAGS)  -o $@ $<
 
 # Productions
-InertionSort1 : $(OBJFILES)
+InsertionSort1 : $(OBJFILES)
 	$(LINK) $(OBJFILES) -o $@
 
 clean:
