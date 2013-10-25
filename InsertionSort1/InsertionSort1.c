@@ -42,10 +42,10 @@ void insertionSort(int size, int * ar) {
     int V = ar[size-1];
     ar[size-1] = ar[size-2];
 
-    for(i=size-1; i>0; i--) {
+    for(i=size-1; i>=0; i--) {
         if( (i>0) && ((ar[i-1])>V) ) {
            ar[i] = ar[i-1];
-        } else { ar[i] = V; }
+        } else { ar[i] = V; i=0; }
 
         for(j=0; j<size; j++) {
             printf("%d ", ar[j]);
